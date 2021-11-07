@@ -30,12 +30,15 @@ body {
   color: var(--main_text_color);
   font-size: var(--main_font_size);
   font-family: var(--font_family_main);
-  height: 100%;
+  min-height: 100vh;
 }
 
 main {
-  position: relative;
-  height: 100%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
   width: 100%;
 }
 
@@ -50,10 +53,6 @@ main {
   border-radius: 0.8rem;
   text-align: center;
   padding-bottom: 3.2rem;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }
 
 .preview-card__image-container {
